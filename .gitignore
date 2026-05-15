@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Logs
+logs/
+*.log
+
+# Local secrets — copy .env.example to .env and fill in your keys
+.env
+.env.local
+
+# State files (会含路径/时间游标,不该入 git)
+.bookmark-baseline.json
+.last-processed.json
+.classification_log.jsonl
+.classification_corrections.jsonl
+.classification_audit.jsonl
+.feedback_cursor.json
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Test artifacts
+test/output/

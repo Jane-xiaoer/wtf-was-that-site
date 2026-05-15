@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Bookmark Capture",
+  "version": "1.0.0",
+  "description": "⌘D bookmark → real-time POST to local capture pipeline (bypasses Chrome Sync flush delay)",
+  "permissions": ["bookmarks"],
+  "host_permissions": ["http://127.0.0.1:7331/*"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Bookmark Captures",
+  "description": "Schema for the Notion database that wtf-was-that-site writes to. Importable via the `ntn` CLI: `ntn db create --schema schema/notion-db.json`. After creation, share the DB with your Notion integration (•••  → Connections).",
+  "properties": {
+    "Name":             { "type": "title" },
+    "URL":              { "type": "url" },
+    "Headline":         { "type": "rich_text" },
+    "Category":         {
+      "type": "select",
+      "options": [
+        { "name": "🎨 视觉创作" },
+        { "name": "✍️ 文字写作" },
+        { "name": "🌐 网页与代码" },
+        { "name": "🔊 声音" },
+        { "name": "🌟 灵感与审美" },
+        { "name": "📚 知识与学习" },
+        { "name": "🛠️ 办公与效率" },
+        { "name": "🎮 兴趣娱乐" },
+        { "name": "📦 资源集合" },
+        { "name": "🌍 出海与基建" },
+        { "name": "🤖 AI 大模型" },
+        { "name": "🔬 其他" }
+      ]
+    },
+    "Subcategory":      { "type": "select" },
+    "Tags":             { "type": "multi_select" },
+    "Capabilities":     { "type": "multi_select" },
+    "Use cases":        { "type": "rich_text" },
+    "Tech highlights":  { "type": "rich_text" },
+    "Cover":            { "type": "files" },
+    "Visit count":      { "type": "number" },
+    "Status":           {
+      "type": "select",
+      "options": [
+        { "name": "🆕 待试" },
+        { "name": "🔍 偶尔" },
+        { "name": "📦 常用" },
+        { "name": "⭐ 高频" }
+      ]
+    },
+    "Last visited":     { "type": "date" },
+    "Added":            { "type": "date" },
+    "网站介绍":           { "type": "rich_text" },
+    "My Notes":         { "type": "rich_text" }
+  }
+}
